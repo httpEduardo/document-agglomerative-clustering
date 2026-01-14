@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ClusterBraid</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=IBM+Plex+Mono:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header>
+        <p class="eyebrow">Agglomerative clustering</p>
+        <h1>ClusterBraid</h1>
+        <p>Group documents into cohesive threads.</p>
+      </header>
+      <section class="panel">
+        <textarea id="docsInput" rows="8" placeholder="Doc 1...\n---\nDoc 2..."></textarea>
+        <label>Clusters
+          <input id="kInput" type="number" value="3" />
+        </label>
+        <button id="clusterButton">Cluster</button>
+      </section>
+      <section class="panel">
+        <h2>Clusters</h2>
+        <div id="results" class="clusters"></div>
+      </section>
+    </main>
+    <div class="glow"></div>
+    <script src="app.js"></script>
+  </body>
+</html>
